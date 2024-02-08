@@ -3,6 +3,56 @@
   margin: 0 auto;
   padding: 0;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-
 }
 
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name, .subname{
+  margin: 0;
+}
+
+.name{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.subname{
+  font-size: 1.4rem;
+}
+
+.element-container{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.element{
+  position: relative; /*for the effect on the hover*/
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.element::before {
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.element:hover::before {
+  bottom: -1rem;
+  opacity: 1;
+}
