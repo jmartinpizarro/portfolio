@@ -12,11 +12,13 @@ function TypingEffect({phrase}){
             } else {
                 clearInterval(intervalID)
             }
-        }, 150)
+        }, 75)
         return () => clearInterval(intervalID)
     }, []) /*format of useEffect: chunk of text, when the useEffect is activated*/
 
     return(
-        <h2>{displayedContent}</h2>
+        <p className="dynamicText">{displayedContent}</p>
     )
 }
+
+export default TypingEffect
