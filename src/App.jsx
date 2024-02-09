@@ -9,6 +9,7 @@ function App(){
       <FollowMouse></FollowMouse>
       <Navbar></Navbar>
       <TypingEffect phrase={'Soy Javier Martín, desarrollador web FrontEnd y creador de contenido'}></TypingEffect>
+      <img src="./src/assets/fotoJMP.jpg" alt="" />
     </>
   )
 }
