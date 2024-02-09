@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
+
+
 
 function TypingEffect({phrase}){
     const [displayedContent, setDisplayedContent] = useState('')
@@ -20,5 +23,9 @@ function TypingEffect({phrase}){
         <p className="dynamicText">{displayedContent}</p>
     )
 }
+TypingEffect.propTypes = {
+    phrase: PropTypes.string.isRequired
+  }
+  
 
 export default TypingEffect
