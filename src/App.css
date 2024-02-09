@@ -21,6 +21,7 @@
 }
 
 .subname{
+  margin-top: -10px;
   font-size: 1.4rem;
 }
 
@@ -57,7 +58,22 @@
   opacity: 1;
 }
 
-img{
-  border-radius: 100%;
+.dynamicText, .intro{
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.initContainer{
+  height: 85vh;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile{
   width: 100px;
+  border-radius: 50%;
 }
