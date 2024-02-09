@@ -15,9 +15,9 @@ function TypingEffect({phrase}){
             } else {
                 clearInterval(intervalID)
             }
-        }, 75)
+        }, 50)
         return () => clearInterval(intervalID)
-    }, []) /*format of useEffect: chunk of text, when the useEffect is activated*/
+    }, [phrase]) /*format of useEffect: chunk of text, when the useEffect is activated*/
 
     return(
         <p className="dynamicText">{displayedContent}</p>
