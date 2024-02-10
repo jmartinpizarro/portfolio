@@ -4,6 +4,7 @@ import FollowMouse from './FollowMouse';
 import Navbar from './Navbar';
 import TypingEffect from './TypingEffect';
 import SocialMediaItem from './SocialMediaItem';
+import DownloadButton from './DownloadButton';
 
 function App(){
   const [startTyping, setStartTyping] = useState(false)
@@ -56,6 +57,8 @@ function App(){
           <SocialMediaItem image={'./src/assets/linkedin.svg'} nameMedia={'LinkedIn'}></SocialMediaItem>
           <SocialMediaItem image={'./src/assets/email.svg'} nameMedia={'Email'}></SocialMediaItem>
         </div>
+
+        <DownloadButton></DownloadButton>
       </section>
 
     </> 
