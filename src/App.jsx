@@ -48,7 +48,7 @@ function App(){
           {startTyping && <TypingEffect phrase={'FrontEnd Web Developer'} />}
           {secondStartTyping && <TypingEffect phrase={'Freelancer'} />}
           {thirdStartTyping && <TypingEffect phrase={'Amante de la innovación'} />}
-          {fourthStartTyping && <TypingEffect phrase={'Aspirante a la simplicidad'} />}
+          {fourthStartTyping && <TypingEffect phrase={'Aspirante de la simplicidad'} />}
         </ul>
 
         <div className="socialMediaContainer">

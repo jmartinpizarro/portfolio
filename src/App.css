@@ -65,7 +65,7 @@
 }
 
 .dynamicText{
-  margin: 0;
+  margin: 1.2rem 0;
   font-size: 30px;
   font-weight: 700;
 }
@@ -97,6 +97,7 @@
 }
 
 .typingContainer{
+  height: 30vh;
   margin: 0 4rem;
 }
 
