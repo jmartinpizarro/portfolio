@@ -77,6 +77,10 @@
   font-size: 52px
 }
 
+.intro-span{
+  color: var(--mostaza);
+}
+
 .initContainer{
   position: relative;
   height: 85vh;
@@ -102,6 +106,9 @@
   right: 0px;
   top: 50%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .media-container{

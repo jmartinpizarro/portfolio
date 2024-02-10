@@ -12,8 +12,15 @@ function SocialMediaItem({image, nameMedia}){
 
     }
 
+    if (nameMedia == 'Email'){
+        return(
+            <a className="media-container" href={`mailto:jmartinpizarro04@gmail.com`} target='_blank' rel="noreferrer">
+                <img src={image} alt={`display of ${nameMedia}`} className='icon'/>
+                <p className='nameMedia'>{nameMedia}</p>
+            </a>
+        )
+    }
 
-    
     return(
         <a className="media-container" href={link} target='_blank' rel="noreferrer">
             <img src={image} alt={`display of ${nameMedia}`} className='icon'/>
