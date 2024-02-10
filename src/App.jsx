@@ -3,6 +3,7 @@ import './App.css';
 import FollowMouse from './FollowMouse';
 import Navbar from './Navbar';
 import TypingEffect from './TypingEffect';
+import SocialMediaItem from './SocialMediaItem';
 
 function App(){
   const [startTyping, setStartTyping] = useState(false)
@@ -28,6 +29,7 @@ function App(){
       clearTimeout(timer3);
     };
   }, []);
+
   return(
     <>
       <FollowMouse></FollowMouse>
@@ -43,11 +45,12 @@ function App(){
         </ul>
 
         <div className="socialMediaContainer">
-          
+          <SocialMediaItem image={'./src/assets/github.svg'} nameMedia={'Github'}></SocialMediaItem>
+          <SocialMediaItem image={'./src/assets/linkedin.svg'} nameMedia={'LinkedIn'}></SocialMediaItem>
         </div>
       </section>
 
-    </>
+    </> 
   )
 }
 

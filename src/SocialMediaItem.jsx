@@ -1,9 +1,24 @@
 import {PropTypes} from 'prop-types'
 
 function SocialMediaItem({image, nameMedia}){
+    let link = ''
+    switch (nameMedia){
+        case 'Github':
+            link = 'https://github.com/jmartinpizarro'
+            break
+        case 'LinkedIn':
+            link = 'https://www.linkedin.com/in/javier-mart%C3%ADn-pizarro-824b94264/'
+            break
+
+    }
+
+
     
     return(
-        <p>this is a social media item</p>
+        <a className="media-container" href={link} target='_blank' rel="noreferrer">
+            <img src={image} alt={`display of ${nameMedia}`} className='icon'/>
+            <p className='nameMedia'>{nameMedia}</p>
+        </a>
     )
 }
 

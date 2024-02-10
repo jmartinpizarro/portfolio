@@ -9,7 +9,7 @@ function Navbar(){
             <ul className="element-container">
                 <li className="element">Sobre mí</li>
                 <li className="element">Projectos</li>
-                <li className="element">Contactos</li>
+                <li className="element">Contacto</li>
             </ul>
         </nav>
     )

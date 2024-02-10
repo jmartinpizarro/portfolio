@@ -6,6 +6,8 @@
 }
 
 :root{
+  --light: #e2e2e2;
+  --dark: #242424;
   --mostaza: #D4AF37;
 }
 
@@ -76,6 +78,7 @@
 }
 
 .initContainer{
+  position: relative;
   height: 85vh;
   display: flex;
   align-items: left;
@@ -91,4 +94,42 @@
 
 .typingContainer{
   margin: 0 4rem;
+}
+
+.socialMediaContainer{
+  position: absolute;
+  width: 15rem;
+  right: 0px;
+  top: 50%;
+  overflow: hidden;
+}
+
+.media-container{
+  text-decoration: none;
+  background-color: white;
+  width: 12rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  transform: translateX(10.3rem);
+  justify-content: space-between;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: transform 0.7s ease;
+  gap: 1rem;
+}
+
+.media-container:hover{
+  transform: translateX(3rem);
+}
+
+.media-container img{
+  margin-left: 0.7rem;
+  width: 3rem;
+}
+
+.nameMedia{
+  color: var(--dark);
+  font-size: 20px;
+  margin-right: 1rem;
 }
