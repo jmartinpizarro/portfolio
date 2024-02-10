@@ -5,25 +5,48 @@ import Navbar from './Navbar';
 import TypingEffect from './TypingEffect';
 
 function App(){
-  const [startSecondTyping, setStartSecondTyping] = useState(false)
+  const [startTyping, setStartTyping] = useState(false)
+  const [secondStartTyping, setSecondStartTyping] = useState(false)
+  const [thirdStartTyping, setThirdStartTyping] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setStartSecondTyping(true)
-    }, 2000)
+    const timer1 = setTimeout(() => {
+      setStartTyping(true);
+    }, 1000);
+  
+    const timer2 = setTimeout(() => {
+      setSecondStartTyping(true);
+    }, 2500);
 
-    return () => clearTimeout(timer)
-  }, [])
-
+    const timer3 = setTimeout(() => {
+      setThirdStartTyping(true);
+    }, 3300);
+  
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+    };
+  }, []);
   return(
     <>
       <FollowMouse></FollowMouse>
       <Navbar></Navbar>
+
       <section className='initContainer'>
         <img className='profile' src="./src/assets/fotoJMP.jpg" alt="Javier Martin perfil" />
         <h2 className="intro">Hola, soy Javier Martín</h2>
-        {startSecondTyping && <TypingEffect phrase={'Segundo TypingEffect que comienza después de 3 segundos'} />}
+        <ul className="typingContainer">
+          {startTyping && <TypingEffect phrase={'FrontEnd Web Developer'} />}
+          {secondStartTyping && <TypingEffect phrase={'Freelancer'} />}
+          {thirdStartTyping && <TypingEffect phrase={'Amante de la innovación'} />}
+        </ul>
+
+        <div className="socialMediaContainer">
+          
+        </div>
       </section>
+
     </>
   )
 }

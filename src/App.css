@@ -5,6 +5,10 @@
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }
 
+:root{
+  --mostaza: #D4AF37;
+}
+
 .navbar{
   display: flex;
   align-items: center;
@@ -58,10 +62,17 @@
   opacity: 1;
 }
 
-.dynamicText, .intro{
+.dynamicText{
   margin: 0;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: 700;
+}
+
+.intro{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-size: 52px
 }
 
 .initContainer{
@@ -76,4 +87,8 @@
 .profile{
   width: 100px;
   border-radius: 50%;
+}
+
+.typingContainer{
+  margin: 0 4rem;
 }
