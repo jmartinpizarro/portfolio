@@ -61,6 +61,12 @@ function App(){
         <DownloadButton></DownloadButton>
       </section>
 
+
+      <section id='about-me' className='about-me'></section>
+
+      <section id='project' className='project'></section>
+
+      <section id='contact' className='contact'></section>
     </> 
   )
 }

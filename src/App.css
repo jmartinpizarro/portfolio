@@ -173,3 +173,18 @@
 .downloadButton:hover .right-arrow {
   transform: rotate(90deg); /* Cambio aquí: aplica la rotación al hacer hover sobre el botón */
 }
+
+.about-me{
+  height: 100vh;
+  background-color: red;
+}
+
+.project{
+  height: 100vh;
+  background-color: blue;
+}
+
+.contact{
+  height: 100vh;
+  background-color: green;
+}
