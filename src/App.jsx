@@ -44,7 +44,7 @@ function App(){
 
       <section className='initContainer'>
         <img className='profile' src="./src/assets/fotoJMP.jpg" alt="Javier Martin perfil" />
-        <h2 className="intro">Hola, soy <span className='intro-span'>Javier Martín</span></h2>
+        <h2 className="intro">Hola mundo, soy <span className='intro-span'>Javier Martín</span></h2>
         <ul className="typingContainer">
           {startTyping && <TypingEffect phrase={'FrontEnd Web Developer'} />}
           {secondStartTyping && <TypingEffect phrase={'Freelancer'} />}
