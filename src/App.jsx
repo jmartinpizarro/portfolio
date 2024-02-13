@@ -67,6 +67,7 @@ function App(){
       <section id='project' className='project'></section>
 
       <section id='contact' className='contact'></section>
+
     </> 
   )
 }
