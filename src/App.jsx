@@ -42,7 +42,7 @@ function App(){
       <FollowMouse></FollowMouse>
       <Navbar></Navbar>
 
-      <section className='initContainer'>
+      <section className='initContainer' id='landing'>
         <img className='profile' src="./src/assets/fotoJMP.jpg" alt="Javier Martin perfil" />
         <h2 className="intro">Hola mundo, soy <span className='intro-span'>Javier Martín</span></h2>
         <ul className="typingContainer">
