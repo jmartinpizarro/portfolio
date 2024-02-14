@@ -25,6 +25,6 @@
 
 ¡Gracias por visitar mi portfolio! Si estás interesado en colaborar en un proyecto o simplemente quieres saludar, no dudes en contactarme:
 
-- LinkedIn: [(https://www.linkedin.com/in/tuperfil)](https://www.linkedin.com/in/javier-mart%C3%ADn-pizarro-824b94264/)
+- LinkedIn: https://www.linkedin.com/in/javier-mart%C3%ADn-pizarro-824b94264
 
 ¡Espero que disfrutes explorando mis proyectos!
