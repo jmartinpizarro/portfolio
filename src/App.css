@@ -176,7 +176,27 @@
 
 .about-me{
   height: 100vh;
-  background-color: red;
+}
+
+.about-me-h1{
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--mostaza);
+  font-size: 52px;
+}
+
+.about-me-p{
+  max-width: 50vh;
+  font-size: 18px;
+}
+
+.about-me-p-span{
+  font-weight: 600;
+  color: var(--mostaza);
+}
+
+.about-me-p-span2{
+  font-weight: 700;
 }
 
 .project{
@@ -188,3 +208,4 @@
   height: 100vh;
   background-color: green;
 }
+
