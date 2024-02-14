@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import TypingEffect from './TypingEffect';
 import SocialMediaItem from './SocialMediaItem';
 import DownloadButton from './DownloadButton';
+import CounterButton from './CounterButton';
 
 function App(){
   const [startTyping, setStartTyping] = useState(false)
@@ -64,9 +65,15 @@ function App(){
 
       <section id='about-me' className='about-me'>
         <h1 className="about-me-h1">¿Quieres conocerme?</h1>
-        <p className='about-me-p'>Soy estudiante de Computer Science and Engineering en la Carlos III de Madrid, con <span className='about-me-p-span'>más de dos años de experiencia programando</span>.</p>
-        <p className='about-me-p'>Me considero una persona proactiva y creativa, apasionada por el desarrollo web y comprometida con ofrecer soluciones innovadoras y de calidad.</p>
-        <p className='about-me-p'><span className='about-me-p-span2'>¿Qué harías si tuvieras un desarrollador con estas habilidades a tu alcance?</span></p>
+        <div className="about-me-flex-container">
+          <div>
+            <p className='about-me-p'>Soy estudiante de Computer Science and Engineering en la Carlos III de Madrid, con <span className='about-me-p-span'>más de dos años de experiencia programando</span>.</p>
+            <p className='about-me-p'>Me considero una persona proactiva y creativa, apasionada por el desarrollo web y comprometida con ofrecer soluciones innovadoras y de calidad.</p>
+            <p className='about-me-p'><span className='about-me-p-span2'>¿Qué harías si tuvieras un desarrollador con estas habilidades a tu alcance?</span></p>
+          </div>
+
+          <CounterButton></CounterButton>
+        </div>
       </section>
 
       <section id='project' className='project'></section>

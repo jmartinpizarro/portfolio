@@ -199,6 +199,21 @@
   font-weight: 700;
 }
 
+.about-me-flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30%;
+}
+
+.button-container{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+
 .project{
   height: 100vh;
   background-color: blue;
