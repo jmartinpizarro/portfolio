@@ -9,13 +9,16 @@ function FollowMouse(){
             setPosition({x: clientX, y: clientY})
         }
 
-        window.addEventListener('pointermove', handleMove)
+        window.addEventListener('mousemove', handleMove)
+        return () =>{
+            window.removeEventListener('mousemove', handleMove)
+        }
     }, [])
 
     return (
         <>
             <div style={{
-                position: 'absolute',
+                position: 'fixed',
                 backgroundColor: 'white',
                 border: 'none',
                 borderRadius: '50%',
