@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 function CounterButton(){
     const [count, setCount] = useState(0);
@@ -12,7 +12,7 @@ function CounterButton(){
     return (
         <div className="button-container">
             <button className="counter" onClick={handleClick}>{count}</button>
-            <button className="reset" onClick={handleReset}>¡Haz click aquí!</button>
+            <button className="reset" onClick={handleReset}>¡Haz reset!</button>
         </div>
     )
 }
