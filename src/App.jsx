@@ -71,8 +71,9 @@ function App(){
             <p className='about-me-p'>Me considero una persona proactiva y creativa, apasionada por el desarrollo web y comprometida con ofrecer soluciones innovadoras y de calidad.</p>
             <p className='about-me-p'><span className='about-me-p-span2'>¿Qué harías si tuvieras un desarrollador con estas habilidades a tu alcance?</span></p>
           </div>
-
           <CounterButton></CounterButton>
+
+          <h2 className='about-me-skills'>Habilidades</h2>
         </div>
       </section>
 
