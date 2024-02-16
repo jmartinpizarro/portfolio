@@ -6,6 +6,7 @@ import TypingEffect from './TypingEffect';
 import SocialMediaItem from './SocialMediaItem';
 import DownloadButton from './DownloadButton';
 import CounterButton from './CounterButton';
+import Skill from './Skill';
 
 function App(){
   const [startTyping, setStartTyping] = useState(false)
@@ -73,7 +74,11 @@ function App(){
           </div>
           <CounterButton></CounterButton>
 
-          <h2 className='about-me-skills'>Habilidades</h2>
+          
+        </div>
+        <h2 className='about-me-skills'>Habilidades</h2>
+        <div className='skills-container'>
+          <Skill imgURL='./src/assets/html.svg' phrase='HTML'/>
         </div>
       </section>
 

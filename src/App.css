@@ -144,7 +144,7 @@
 
 .downloadButton{
   position: absolute;
-  bottom: 3rem;
+  bottom: 5rem;
   left: 40%;
   text-decoration: none;
   display: flex;
@@ -242,6 +242,40 @@
   background-color: var(--dark);
 }
 
+.about-me-skills{
+  color: var(--light);
+  font-size: 42px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.skills-container{
+  max-width: 60%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.skill-p{
+  margin: 0 auto;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+
+  background-color: #383838;
+}
+
+.skill-img{
+  width: 26px;
+}
 
 
 
