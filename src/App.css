@@ -232,6 +232,7 @@
 }
 
 .counter, .reset{
+  cursor: pointer;
   border-radius: 10px;
   border: 2px solid var(--light);
   transition: all .8s ease;
@@ -247,20 +248,19 @@
   font-size: 42px;
   letter-spacing: 0.3rem;
   text-align: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .skills-container{
   max-width: 60%;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem auto;
+  display: flex;
   align-items: center;
 }
 
 .skill-p{
   margin: 0 auto;
-  width: 120px;
+  width: auto;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -269,11 +269,21 @@
   gap: 10px;
   font-size: 20px;
   border-radius: 5px;
-
+  padding-right: 10px;
   background-color: #383838;
+  transition: all .3s ease;
 }
 
+.skill-p:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+
+
+
 .skill-img{
+  color: var(--light);
+  padding-left: 10px;
   width: 26px;
 }
 

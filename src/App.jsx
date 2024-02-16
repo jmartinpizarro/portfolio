@@ -51,7 +51,7 @@ function App(){
           {startTyping && <TypingEffect phrase={'FrontEnd Web Developer'} />}
           {secondStartTyping && <TypingEffect phrase={'Freelancer'} />}
           {thirdStartTyping && <TypingEffect phrase={'Amante de la innovación'} />}
-          {fourthStartTyping && <TypingEffect phrase={'Aspirante de la simplicidad'} />}
+          {fourthStartTyping && <TypingEffect phrase={'Y ante todo: lo simple'} />}
         </ul>
 
         <div className="socialMediaContainer">
@@ -74,11 +74,13 @@ function App(){
           </div>
           <CounterButton></CounterButton>
 
-          
         </div>
         <h2 className='about-me-skills'>Habilidades</h2>
         <div className='skills-container'>
           <Skill imgURL='./src/assets/html.svg' phrase='HTML'/>
+          <Skill imgURL='./src/assets/css.svg' phrase='CSS'/>
+          <Skill imgURL='./src/assets/javascript.svg' phrase='JavaScript'/>
+          <Skill imgURL='./src/assets/python.svg' phrase='Python'/>
         </div>
       </section>
 
