@@ -180,7 +180,7 @@
 
 .about-me-h1{
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   color: var(--mostaza);
   font-size: 52px;
 }
@@ -248,14 +248,22 @@
   font-size: 42px;
   letter-spacing: 0.3rem;
   text-align: center;
-  margin: 2rem auto;
+  margin: 4rem auto 2rem auto;
 }
 
-.skills-container{
-  max-width: 60%;
+.skills-container1, .skills-container2{
   margin: 2rem auto;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.skills-container1{
+  max-width: 60%;
+}
+
+.skills-container2{
+  max-width: 50%;
 }
 
 .skill-p{
@@ -284,7 +292,7 @@
 .skill-img{
   color: var(--light);
   padding-left: 10px;
-  width: 26px;
+  width: 22px;
 }
 
 
