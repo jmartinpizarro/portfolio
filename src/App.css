@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  box-sizing: border-box;
 }
 
 :root{
@@ -287,20 +288,67 @@
   scale: 1.05;
 }
 
-
-
 .skill-img{
   color: var(--light);
   padding-left: 10px;
   width: 22px;
 }
 
-
-
-
 .project{
   height: 100vh;
-  background-color: blue;
+}
+
+.project-h1{
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--mostaza);
+  font-size: 52px;
+  font-style: italic;
+}
+
+.project-card-project-container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-container{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid var(--light);
+  padding: 10px;
+}
+
+.card-title{
+  font-size: 20px;
+  margin: 0.6rem auto;
+  text-decoration: none;
+  color: var(--light);
+}
+
+.card-title:hover{
+  text-decoration: underline;
+}
+
+.skills-used {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.sub-skill {
+  padding-right: 10px;
+  margin: 0;
+  transform: scale(0.65);
 }
 
 .contact{

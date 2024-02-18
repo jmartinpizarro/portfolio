@@ -1,28 +1,28 @@
 import PropTypes from 'prop-types';
+import Skill from './Skill';
 
-function ProjectCard({imgURL, nameProject, descProject, demo, repo}){
+function ProjectCard({nameProject, descProject, repo, skills}){
 
     return(
         <div className='card-container'>
-            <img src={imgURL} alt={`${nameProject} small image`}/>
             <div className="text-container">
-                <h1 className="card-h1">{nameProject}</h1>
+                <a className='card-title' href={repo} target='_blank' rel="noreferrer">{nameProject}</a>
                 <p className='card-p'>{descProject}</p>
             </div>
-            <div className="button-container">
-                <button className="project-btn"><a href={demo}>Pásate por la DEMO</a></button>
-                <button className="project-btn"><a href={repo}>El repositorio es gratis!</a></button>
+            <div className="skills-used">
+                {skills.map((skill, index) => (
+                    <Skill key={index} imgURL={`./src/assets/${skill}.svg`} phrase={skill.toUpperCase()} className='sub-skill'/>
+                ))}
             </div>
         </div>
     )
 }
 
 ProjectCard.propTypes = {
-    imgURL: PropTypes.string.isRequired,
     nameProject: PropTypes.string.isRequired,
     descProject: PropTypes.string.isRequired,
-    demo: PropTypes.string.isRequired,
-    repo: PropTypes.string.isRequired
+    repo: PropTypes.string.isRequired,
+    skills: PropTypes.array.isRequired
 }
 
 export default ProjectCard

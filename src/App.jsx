@@ -7,6 +7,7 @@ import SocialMediaItem from './SocialMediaItem';
 import DownloadButton from './DownloadButton';
 import CounterButton from './CounterButton';
 import Skill from './Skill';
+import ProjectCard from './ProjectCard';
 
 function App(){
   const [startTyping, setStartTyping] = useState(false)
@@ -63,7 +64,6 @@ function App(){
         <DownloadButton></DownloadButton>
       </section>
 
-
       <section id='about-me' className='about-me'>
         <h1 className="about-me-h1">¿Quieres conocerme?</h1>
         <div className="about-me-flex-container">
@@ -93,7 +93,18 @@ function App(){
         </div>
       </section>
 
-      <section id='project' className='project'></section>
+      <section id='project' className='project'>
+        <h1 className='project-h1'>Echa un vistazo a mis trabajos!</h1>
+        <div className="project-card-project-container">
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+          <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
+        </div>
+      </section>
 
       <section id='contact' className='contact'></section>
 
