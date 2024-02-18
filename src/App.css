@@ -386,6 +386,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
+  text-indent: 10px;
   width: 400px;
   padding: 10px 0;
   margin: 10px 0;
