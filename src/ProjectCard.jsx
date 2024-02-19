@@ -11,7 +11,7 @@ function ProjectCard({nameProject, descProject, repo, skills}){
             </div>
             <div className="skills-used">
                 {skills.map((skill, index) => (
-                    <Skill key={index} imgURL={`./src/assets/${skill}.svg`} phrase={skill.toUpperCase()} className='sub-skill'/>
+                    <Skill key={index} imgURL={`../${skill}.svg`} phrase={skill.toUpperCase()} className='sub-skill'/>
                 ))}
             </div>
         </div>

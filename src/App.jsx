@@ -47,7 +47,7 @@ function App(){
       <Navbar></Navbar>
 
       <section className='initContainer' id='landing'>
-        <img className='profile' src="./src/assets/fotoJMP.jpg" alt="Javier Martin perfil" />
+        <img className='profile' src="../fotoJMP.jpg" alt="Javier Martin perfil" />
         <h2 className="intro">Hola mundo, soy <span className='intro-span'>Javier Martín</span></h2>
         <ul className="typingContainer">
           {startTyping && <TypingEffect phrase={'FrontEnd Web Developer'} />}
@@ -57,9 +57,9 @@ function App(){
         </ul>
 
         <div className="socialMediaContainer">
-          <SocialMediaItem image={'./src/assets/github.svg'} nameMedia={'Github'}></SocialMediaItem>
-          <SocialMediaItem image={'./src/assets/linkedin.svg'} nameMedia={'LinkedIn'}></SocialMediaItem>
-          <SocialMediaItem image={'./src/assets/email.svg'} nameMedia={'Email'}></SocialMediaItem>
+          <SocialMediaItem image={'../github.svg'} nameMedia={'Github'}></SocialMediaItem>
+          <SocialMediaItem image={'../linkedin.svg'} nameMedia={'LinkedIn'}></SocialMediaItem>
+          <SocialMediaItem image={'../email.svg'} nameMedia={'Email'}></SocialMediaItem>
         </div>
 
         <DownloadButton></DownloadButton>
@@ -79,17 +79,16 @@ function App(){
         <div>
           <h2 className='about-me-skills'>Habilidades</h2>
           <div className='skills-container1'>
-            <Skill imgURL='./src/assets/html.svg' phrase='HTML'/>
-            <Skill imgURL='./src/assets/css.svg' phrase='CSS'/>
-            <Skill imgURL='./src/assets/javascript.svg' phrase='JavaScript'/>
-            <Skill imgURL='./src/assets/python.svg' phrase='Python'/>
-            <Skill imgURL='./src/assets/astro.svg' phrase='Astro'/>
-            <Skill imgURL='./src/assets/react.svg' phrase='React'/>
-            <Skill imgURL='./src/assets/c.svg' phrase='C'/>
-            <Skill imgURL='./src/assets/sql.svg' phrase='SQL'/>
-            <Skill imgURL='./src/assets/linux.svg' phrase='Linux'/>
+            <Skill imgURL='../html.svg' phrase='HTML'/>
+            <Skill imgURL='../css.svg' phrase='CSS'/>
+            <Skill imgURL='../javascript.svg' phrase='JavaScript'/>
+            <Skill imgURL='../python.svg' phrase='Python'/>
+            <Skill imgURL='../astro.svg' phrase='Astro'/>
+            <Skill imgURL='../react.svg' phrase='React'/>
+            <Skill imgURL='../c.svg' phrase='C'/>
+            <Skill imgURL='../sql.svg' phrase='SQL'/>
+            <Skill imgURL='../linux.svg' phrase='Linux'/>
           </div>
-
         </div>
       </section>
 

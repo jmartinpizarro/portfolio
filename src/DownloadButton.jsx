@@ -1,7 +1,7 @@
 function DownloadButton(){
     return(
-        <a href="./src/assets/JavierMartinCV.pdf" download className="downloadButton">
-            <img src="./src/assets/right-arrow.png" alt="a right arrow" className="right-arrow" />
+        <a href="../JavierMartinCV.pdf" download className="downloadButton">
+            <img src="../right-arrow.png" alt="a right arrow" className="right-arrow" />
             Descarga mi CV
         </a>
     )
