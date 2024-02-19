@@ -179,7 +179,7 @@
 }
 
 .about-me{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-me-h1{
@@ -296,7 +296,7 @@
 }
 
 .project{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .project-h1{
