@@ -88,7 +88,7 @@
 
 .initContainer{
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: left;
   justify-content: center;
@@ -102,7 +102,7 @@
 }
 
 .typingContainer{
-  height: 26.5vh;
+  min-height: 26.5vh;
   margin: 0 4rem;
 }
 
@@ -353,7 +353,7 @@
 }
 
 .contact{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,8 +363,9 @@
 }
 
 .info{
+  text-align: center;
   font-size: 52px;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .contact-form {
