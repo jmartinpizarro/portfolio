@@ -83,14 +83,13 @@ function App(){
             <Skill imgURL='./src/assets/css.svg' phrase='CSS'/>
             <Skill imgURL='./src/assets/javascript.svg' phrase='JavaScript'/>
             <Skill imgURL='./src/assets/python.svg' phrase='Python'/>
-          </div>
-          <div className='skills-container2'>
             <Skill imgURL='./src/assets/astro.svg' phrase='Astro'/>
             <Skill imgURL='./src/assets/react.svg' phrase='React'/>
             <Skill imgURL='./src/assets/c.svg' phrase='C'/>
             <Skill imgURL='./src/assets/sql.svg' phrase='SQL'/>
             <Skill imgURL='./src/assets/linux.svg' phrase='Linux'/>
           </div>
+
         </div>
       </section>
 
