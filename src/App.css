@@ -41,6 +41,9 @@
 }
 
 .element{
+  display: flex;
+  align-items: center;
+  height: 7rem;
   position: relative; /*for the effect on the hover*/
   font-size: 1.2rem;
   cursor: pointer;
@@ -49,7 +52,7 @@
 .element::before {
   content: '';
   position: absolute;
-  bottom: -3rem;
+  bottom: 0; /* Ajuste el valor de "bottom" a 0 */
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
@@ -61,9 +64,10 @@
 }
 
 .element:hover::before {
-  bottom: -1rem;
+  bottom: 2rem; /* Por ejemplo, mueva el pseudo-elemento hacia arriba */
   opacity: 1;
 }
+
 
 .dynamicText{
   margin: 1.2rem 0;
@@ -366,7 +370,6 @@
 .contact-form {
   width: 400px;
   margin: 0 auto;
-  padding: 20px;
   background-color: var(--dark);
   border-radius: 10px;
 }
@@ -421,9 +424,6 @@ input:focus, textarea:focus{
 
 
 @media screen and (max-width: 1140px) {
-  *{
-    overflow-x: hidden;
-  }
   .navbar, .initContainer, .about-me, .project, .contact{
     margin: 0 auto;
     max-width: 90%;
@@ -646,5 +646,110 @@ input:focus, textarea:focus{
     margin: 0;
   }
 
+  .contact-form{
+    height: 550px;
+  }
 
+  .info{
+    font-size: 32px;
+    height: 130px;
+  }
 }
+
+@media screen and (max-width: 570px) {
+  .navbar{
+    gap: 0;
+  }
+
+  .element-container{
+    gap: 20px;
+  }
+
+  .element{
+    width: 100px;
+    font-size: 1rem;
+    height: auto;
+  }
+
+  .element:before{
+    display: none;
+  }
+
+  .profile{
+    margin: 20px;
+  }
+
+  .socialMediaContainer{
+    top: 45%;
+  }
+
+  .typingContainer{
+    height: 200px;
+    margin: 0 2rem;
+  }
+
+  .intro{
+    font-size: 26px;
+  }
+
+  .project-h1{
+    font-size: 32px;
+  }
+
+  .about-me-skills{
+    font-size: 30px;
+    margin: 0 auto 4rem auto;
+  }
+
+  .project-h1{
+    margin: 5rem auto;
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .contact-btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  label{
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  .contact-form{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .intro{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .typingContainer{
+    margin: 0 1rem;
+  }
+
+  .dynamicText{
+    font-size: 15px;
+  }
+
+  .downloadButton{
+    margin: 0 auto;
+    font-size: 15px;
+    width: 11rem;
+    height: 2.5rem;
+  }
+
+  .info{
+    font-size: 26px ;
+  }
+}
+

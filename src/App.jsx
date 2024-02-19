@@ -94,7 +94,7 @@ function App(){
       </section>
 
       <section id='project' className='project'>
-        <h1 className='project-h1'>Echa un vistazo a mis trabajos!</h1>
+        <h1 className='project-h1'>¡Echa un vistazo a mis trabajos!</h1>
         <div className="project-card-project-container">
           <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
           <ProjectCard nameProject={'ToDragList'} descProject={'Implementación de una lista con elementos que se deslizan por el tablero'} repo={'https://www.google.com/'} skills={['html', 'css', 'astro', 'react']}/>
