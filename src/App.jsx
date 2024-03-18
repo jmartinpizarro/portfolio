@@ -81,9 +81,9 @@ function App(){
           <div className='skills-container1'>
             <Skill imgURL='../html.svg' phrase='HTML'/>
             <Skill imgURL='../css.svg' phrase='CSS'/>
-            <Skill imgURL='../javascript.svg' phrase='JavaScript'/>
-            <Skill imgURL='../python.svg' phrase='Python'/>
             <Skill imgURL='../astro.svg' phrase='Astro'/>
+            <Skill imgURL='../python.svg' phrase='Python'/>
+            <Skill imgURL='../javascript.svg' phrase='JavaScript'/>
             <Skill imgURL='../react.svg' phrase='React'/>
             <Skill imgURL='../c.svg' phrase='C'/>
             <Skill imgURL='../sql.svg' phrase='SQL'/>
@@ -95,13 +95,13 @@ function App(){
       <section id='project' className='project'>
         <h1 className='project-h1'>¡Echa un vistazo a mis trabajos!</h1>
         <div className="project-card-project-container">
-          <ProjectCard nameProject={'Sticky Notes'} descProject={'Implementación de una app de notas rápidas que se pueden mover por el tablero.'} repo={'https://github.com/jmartinpizarro/sticky-notes'} skills={['html', 'css', 'react']}/>
-          <ProjectCard nameProject={'Advice Generator App'} descProject={'Implementación de una aplicación que genera respuestas filosóficas usando APIs y JS'} repo={'https://github.com/jmartinpizarro/Advice-Generator-App'} skills={['html', 'css', 'javascript']}/>
-          <ProjectCard nameProject={'React Weather App'} descProject={'Implementación de una app para obtener datos sobre el tiempo de una localización APIs en React'} repo={'https://github.com/jmartinpizarro/weather-app-react'} skills={['html', 'react']}/>
+          <ProjectCard nameProject={'Sticky Notes'} descProject={'Implementación de una app de notas rápidas que se pueden mover por el tablero.'} repo={'https://bejewelled-fox-deb5b4.netlify.app'} skills={['html', 'css', 'react']}/>
+          <ProjectCard nameProject={'Advice Generator App'} descProject={'Implementación de una aplicación que genera respuestas filosóficas usando APIs y JS'} repo={'https://advicegeneratorjmp.netlify.app'} skills={['html', 'css', 'javascript']}/>
+          <ProjectCard nameProject={'React Weather App'} descProject={'Implementación de una app para obtener datos sobre el tiempo de una localización APIs en React'} repo={'https://mellow-snickerdoodle-41dff9.netlify.app'} skills={['html', 'react']}/>
 
-          <ProjectCard nameProject={'Formulario Responsivo'} descProject={'Componente web. Implementación de un formulario dinámico.'} repo={'https://github.com/jmartinpizarro/newsletter-sign-up-with-success-message-main'} skills={['html', 'css', 'javascript']}/>
-          <ProjectCard nameProject={'Lista de Pacientes'} descProject={'Implementación de un software que permite guardar y borrar pacientes de un hospital'} repo={'https://github.com/jmartinpizarro/ListaPacientes'} skills={['html', 'css', 'javascript']}/>
-          <ProjectCard nameProject={'Componente de valoración'} descProject={'Implementación de un componente que permite al usuario opinar de un rango del 1 al 5'} repo={'https://github.com/jmartinpizarro/interactive-rating-component-main'} skills={['html', 'css', 'javascript']}/>
+          <ProjectCard nameProject={'Formulario Responsivo'} descProject={'Componente web. Implementación de un formulario dinámico.'} repo={'https://jmartinpizarro.github.io/newsletter-sign-up-with-success-message-main/'} skills={['html', 'css', 'javascript']}/>
+          <ProjectCard nameProject={'Lista de Pacientes'} descProject={'Implementación de un software que permite guardar y borrar pacientes de un hospital'} repo={'https://jmartinpizarro.github.io/ListaPacientes/'} skills={['html', 'css', 'javascript']}/>
+          <ProjectCard nameProject={'Componente de valoración'} descProject={'Implementación de un componente que permite al usuario opinar de un rango del 1 al 5'} repo={'https://jmartinpizarro.github.io/interactive-rating-component-main/'} skills={['html', 'css', 'javascript']}/>
         </div>
       </section>
 

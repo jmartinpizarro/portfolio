@@ -4,9 +4,9 @@ import Skill from './Skill';
 function ProjectCard({nameProject, descProject, repo, skills}){
 
     return(
-        <div className='card-container'>
+        <a className='card-container' href={repo} target='_blank' rel="noreferrer">
             <div className="text-container">
-                <a className='card-title' href={repo} target='_blank' rel="noreferrer">{nameProject}</a>
+                <h1 className='card-title' >{nameProject}</h1>
                 <p className='card-p'>{descProject}</p>
             </div>
             <div className="skills-used">
@@ -14,7 +14,7 @@ function ProjectCard({nameProject, descProject, repo, skills}){
                     <Skill key={index} imgURL={`../${skill}.svg`} phrase={skill.toUpperCase()} className='sub-skill'/>
                 ))}
             </div>
-        </div>
+        </a>
     )
 }
 

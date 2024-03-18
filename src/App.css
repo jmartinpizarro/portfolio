@@ -97,6 +97,7 @@
 }
 
 .profile{
+  margin: 2rem 0;
   width: 100px;
   border-radius: 50%;
 }
@@ -317,18 +318,24 @@
 
 .card-container{
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border-radius: 10px;
   border: 1px solid var(--light);
   padding: 10px;
+  color: var(--light);
+  text-decoration: none;
 }
 
 .card-title{
   font-size: 20px;
-  margin: 0.6rem auto;
+  margin: 1rem 0.3rem;
   text-decoration: none;
   color: var(--light);
+}
+
+.card-p{
+  margin: 1rem 0.3rem;
 }
 
 .card-title:hover{
@@ -638,14 +645,15 @@ input:focus, textarea:focus{
     grid-template-columns: repeat(1, auto);
   }
 
-  .card-container{
+  .card-container{  
     flex-direction: column;
     width: 90%;
     gap: 0;
   }
 
   .text-container{
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
     height: 170px;
   }
 
