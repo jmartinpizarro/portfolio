@@ -343,8 +343,12 @@
 }
 
 .skills-used {
+
   width: 90%;
   position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
   bottom: 10px;
   display: flex;
   flex-direction: row;
