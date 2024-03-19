@@ -6,8 +6,20 @@ function ContactForm(){
 
         fetch(scriptURL, { method: 'POST', body: new FormData(e.target) })
         .then(response => console.log('¡Éxito!', response))
-        .catch(error => console.error('¡Error!', error.message));
+        .catch(error => console.error('¡Error!', error.message))
+        .then(handleClick);
     }
+
+    const handleClick = () => {
+        const name = document.getElementById('name')
+        const email = document.getElementById('email')
+        const message = document.getElementById('message')
+
+        name.value = ''
+        email.value = ''
+        message.value = ''
+    }
+
 
     return(
         <>
