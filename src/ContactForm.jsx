@@ -1,9 +1,18 @@
 function ContactForm(){
 
+    const submitToSheets = (e) => {
+        e.preventDefault()
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgC9P48NcTsZmTVIq5TuFgXlEIPZMexi85bRpeLXkYmdjt2JwlBO1jD9Zg6Qu6-Kad/exec'
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(e.target) })
+        .then(response => console.log('¡Éxito!', response))
+        .catch(error => console.error('¡Error!', error.message));
+    }
+
     return(
         <>
             <h1 className="info">¿Quieres que me ponga manos a la obra?</h1>
-            <form className="contact-form">
+            <form className="contact-form" name="contact-form" onSubmit={submitToSheets}>
             <div className="form-group">
                 <label htmlFor="name">Nombre:</label>
                 <input type="text" id="name" name="name" required/>
